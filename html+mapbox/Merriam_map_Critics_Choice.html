@@ -7,34 +7,17 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- 
-THESE ARE CALLS TO DIFFERENT EXTERNAL FILES
-MAPBOX HAS A JAVASCRIPT LIBRARY THAT YOU NEED
-THE NEXT IS A CSS FILE FOR THE MAP
-AND THE FINAL ONE IS THE LIBRARY FOR JQUERY, WHICH I USE FOR THE PULLDOWN MENU.
- -->
-
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.5/turf.min.js'></script>
 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<!-- 
-THESE ARE CSS STYLES WHAT YOU SHOULD FREELY PLAY WITH
-THE STYLES THAT BEGIN WITH # RELATE TO IDS, 
-THE ONES THAT BEGIN WITH . RELATE TO CLASSES
-WHEN YOU GOT EVERYTHING WORKING YOU CAN PLAY WITH THESE AND ADD TO THESE 
-TO MAKE YOUR FONTS AND LAYOUTS NICE AND LOVELY
- -->
- 	<!--    <link href=' http://fonts.googleapis.com/css?family=IBM+Plex+Sans' rel='stylesheet' type='text/css'>  -->
 
     <link rel="stylesheet" href="https://use.typekit.net/wue0dpu.css">
 
 	<style>
 		::-webkit-scrollbar {
 			width: 0px;
-			/* remove scrollbar space */
 			background: transparent;
-			/* optional: just make scrollbar invisible */
 		}
 
 		.info {
@@ -143,29 +126,17 @@ TO MAKE YOUR FONTS AND LAYOUTS NICE AND LOVELY
 	</style>
 
 </head>
-<!-- THE BODY OF THE HTML BEGINS HERE -->
+
 
 <body>
-
-	<!-- 
-THE DIVS BELOW ARE SUPER IMPORTANT:
-THEY ARE WHERE THE MAP WILL GO, AND YOUR ARTICLE TEXT WILL GO
-YOU WILL CERTAINLY WANT TO STYLE THESE, BOTH THEIR PLACEMENT AND CONTENT 
-THE MAP SHOULD BE EMPTY.
-WHATEVER INTRODUCTORY TEXT YOU WANT CAN GO INTO THE ARTICLEPLACE DIV
- -->
 
 
 	<div id='map'>
 		<div id="dropdown">
-    	<!-- 
-			<select id="select-menu">
-				<option value="">All Options</option>
-			</select>  -->
+
 		</div>
 		<div id='color-scale'>
 			<p> Locations</p>
-	<!--			<div><span style='background-color: #2A88FA'></span>Movie Critics from Around the World</div> -->
 			<div><span style='background-color: #FA9F2A' style="color: #0B0694"></span> Best International Feature Film</div>
 			
 		</div>
@@ -271,34 +242,27 @@ WHATEVER INTRODUCTORY TEXT YOU WANT CAN GO INTO THE ARTICLEPLACE DIV
 					]
 				}
 			});
-// these functions control Mouse actions
-// they make the pop-up headline or update the article text
-			// When we move the mouse over, draw the popup and change the hover style
+
 			map.on('mousemove', 'datalayer', function (e) {
 				startHover(e)
 				drawPopup(e)
 			});
 
-			// When we move the mouse away from a point, turn off the hovering and popup
+
 			map.on('mouseleave', 'datalayer', function (e) {
 				stopHover(e)
 				removePopup(e)
 			});
 
-			// When we click, update the article (the right-hand side)
 			map.on('click', 'datalayer', function (e) {
 				updateArticle(e)
 			})
-// very important!! this automatically centers the map and zooms it
 			map.fitBounds(turf.bbox(infoData), { padding: 0, linear: true })
 		})
 
 
 	</script>
 	<script>
-	// this part is J query / with some mapbox JavaScript
-	// it changes what is displayed based on the pulldown menu
-
 		var groupsObj = {};
 
 		$(document).ready(function () {
