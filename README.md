@@ -32,8 +32,6 @@ The notebook, [Merriam_Academy_Awards_Scraping_International_Films.ipynb](Merria
 [geo-data12-22.js](outputs-backup-csvs/geo-data12-22.js) is the final output of the notebook, a geojson file for input into the html. This file contains the film information by country and the geojson information.
 
 
-[geo-data12-22.js](html+mapbox/geo-data12-22.js) is the output from the notebook— . 
-
 ## Licensing
 All code in this repository is available under the [MIT License](https://opensource.org/licenses/MIT). Files in the output/ directory are available under the [Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/).
 
