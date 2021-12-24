@@ -5,7 +5,7 @@ This repository scrapes the [Academy Awards Database](https://awardsdatabase.osc
 ## Notebook
 
 ### Scraping
-The notebook, [Merriam_Academy_Awards_Scraping_International_Films.ipynb](docs/Merriam_Academy_Awards_Scraping_International_Films.ipynb)
+The notebook, [Merriam_Academy_Awards_Scraping_International_Films.ipynb](main/Merriam_Academy_Awards_Scraping_International_Films.ipynb)
  scrapes the Academy Awards Database for Best International Feature Film Winners and their Acceptance Speeches using Selenium WebDriver and Beautiful Soup. The ultimate output is a geojson file with the information for film wins by country.
 
 [Oscar_International_Films.csv](docs/Oscar_International_Films.csv) is a manually edited version of the final csv backup to be read into the notebook. The file has an added column for the number of award wins per country and the excess html in the speech column has been removed.
