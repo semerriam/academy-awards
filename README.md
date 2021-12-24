@@ -1,6 +1,6 @@
 # Academy Awards Database Scraping
 
-This repository scrapes the [Academy Awards Database](awardsdatabase.oscars.org/search/) for the International Feature Film category previously called Foreign Language Film. The ultimate output is a html and js file for a map of each country having had a film win the award from the Academy's beginnings. When rolling over each country, information for the year, number of awards by country, film title, and acceptance speech information comes up with a few glitches here and there. 
+This repository scrapes the [Academy Awards Database](https://awardsdatabase.oscars.org/search/) for the International Feature Film category previously called Foreign Language Film. The ultimate output is a html and js file for a map of each country having had a film win the award from the Academy's beginnings. When rolling over each country, information for the year, number of awards by country, film title, and acceptance speech information comes up with a few glitches here and there. 
 
 ## Notebook
 
