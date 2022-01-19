@@ -14,7 +14,7 @@ The notebook, [Merriam_Academy_Awards_Scraping_International_Films.ipynb](Merria
 
 ## HTML & Mapbox
 
-[Critics'_Choice_mapbox_screenshot.png](Critics'_Choice_mapbox_screenshot.png)
+[Critics'_Choice_mapbox_screenshot.png](html+mapbox/Critics'_Choice_mapbox_screenshot.png)
 
 [Critics_Choice_map.html](html+mapbox/Critics_Choice_map.html) is the final html file including Mapbox API information with the Mapbox access token removed.
 
