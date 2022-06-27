@@ -14,7 +14,7 @@ The notebook, [Merriam_Academy_Awards_Scraping_International_Films.ipynb](Merria
 
 ![Critics'_Choice_map_screenshot.png](html+mapbox/Critics'_Choice_map_screenshot.png)
 
-[Critics_Choice_map.html](html+mapbox/Critics_Choice_map.html) is the final html file including Mapbox API information with the Mapbox access token removed.
+[Merriam_map_Critics_Choice.html](html+mapbox/Merriam_map_Critics_Choice.html) is the final html file including Mapbox API information
 
 [Oscars_International_Films_Summary2.csv](html+mapbox/Oscars_International_Films_Summary2.csv) is a version of the backup_Oscars_International_Films.csv file with row informaiton combined by country and an additional column named summary_per_country with the summaries of each film combined by each country. This CSV is read into the notebook to merge with the geojson file, [world_custom.geo2.json](html+mapbox/world_custom.geo2.json).
 
